@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C423418A20595A3E0019C7AB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C423418820595A3E0019C7AB /* LICENSE */; };
+		C423418B20595A3E0019C7AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C423418920595A3E0019C7AB /* README.md */; };
+		C455E75A20594BB100A3211D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455E75920594BB100A3211D /* AppDelegate.swift */; };
+		C455E75C20594BB100A3211D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455E75B20594BB100A3211D /* ViewController.swift */; };
+		C455E75F20594BB100A3211D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C455E75D20594BB100A3211D /* Main.storyboard */; };
+		C455E76120594BB100A3211D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C455E76020594BB100A3211D /* Assets.xcassets */; };
+		C455E76420594BB100A3211D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C455E76220594BB100A3211D /* LaunchScreen.storyboard */; };
+		C455E77520594BF800A3211D /* PopInterrupter.h in Headers */ = {isa = PBXBuildFile; fileRef = C455E77320594BF800A3211D /* PopInterrupter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C455E77820594BF800A3211D /* PopInterrupter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C455E77120594BF800A3211D /* PopInterrupter.framework */; };
+		C455E77920594BF800A3211D /* PopInterrupter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C455E77120594BF800A3211D /* PopInterrupter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C455E78020594C2D00A3211D /* UINavigationController+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455E77E20594C2D00A3211D /* UINavigationController+Swizzle.swift */; };
+		C455E78120594C2D00A3211D /* UIViewController+PopInterrupter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455E77F20594C2D00A3211D /* UIViewController+PopInterrupter.swift */; };
+		C455E783205954D500A3211D /* ScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455E782205954D500A3211D /* ScrollController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C455E77620594BF800A3211D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C455E74E20594BB100A3211D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C455E77020594BF800A3211D;
+			remoteInfo = PopInterrupter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C455E77D20594BF800A3211D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C455E77920594BF800A3211D /* PopInterrupter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C423418820595A3E0019C7AB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C423418920595A3E0019C7AB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C455E75620594BB100A3211D /* PopInterrupterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopInterrupterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C455E75920594BB100A3211D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C455E75B20594BB100A3211D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C455E75E20594BB100A3211D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C455E76020594BB100A3211D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C455E76320594BB100A3211D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C455E76520594BB100A3211D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C455E77120594BF800A3211D /* PopInterrupter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopInterrupter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C455E77320594BF800A3211D /* PopInterrupter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopInterrupter.h; sourceTree = "<group>"; };
+		C455E77420594BF800A3211D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C455E77E20594C2D00A3211D /* UINavigationController+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Swizzle.swift"; sourceTree = "<group>"; };
+		C455E77F20594C2D00A3211D /* UIViewController+PopInterrupter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PopInterrupter.swift"; sourceTree = "<group>"; };
+		C455E782205954D500A3211D /* ScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C455E75320594BB100A3211D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C455E77820594BF800A3211D /* PopInterrupter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C455E76D20594BF800A3211D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C455E74D20594BB100A3211D = {
+			isa = PBXGroup;
+			children = (
+				C455E77220594BF800A3211D /* PopInterrupter */,
+				C455E75820594BB100A3211D /* PopInterrupterDemo */,
+				C455E75720594BB100A3211D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C455E75720594BB100A3211D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C455E75620594BB100A3211D /* PopInterrupterDemo.app */,
+				C455E77120594BF800A3211D /* PopInterrupter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C455E75820594BB100A3211D /* PopInterrupterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C423418920595A3E0019C7AB /* README.md */,
+				C423418820595A3E0019C7AB /* LICENSE */,
+				C455E75920594BB100A3211D /* AppDelegate.swift */,
+				C455E75B20594BB100A3211D /* ViewController.swift */,
+				C455E782205954D500A3211D /* ScrollController.swift */,
+				C455E75D20594BB100A3211D /* Main.storyboard */,
+				C455E76020594BB100A3211D /* Assets.xcassets */,
+				C455E76220594BB100A3211D /* LaunchScreen.storyboard */,
+				C455E76520594BB100A3211D /* Info.plist */,
+			);
+			path = PopInterrupterDemo;
+			sourceTree = "<group>";
+		};
+		C455E77220594BF800A3211D /* PopInterrupter */ = {
+			isa = PBXGroup;
+			children = (
+				C455E77E20594C2D00A3211D /* UINavigationController+Swizzle.swift */,
+				C455E77F20594C2D00A3211D /* UIViewController+PopInterrupter.swift */,
+				C455E77320594BF800A3211D /* PopInterrupter.h */,
+				C455E77420594BF800A3211D /* Info.plist */,
+			);
+			path = PopInterrupter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C455E76E20594BF800A3211D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C455E77520594BF800A3211D /* PopInterrupter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C455E75520594BB100A3211D /* PopInterrupterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C455E76820594BB100A3211D /* Build configuration list for PBXNativeTarget "PopInterrupterDemo" */;
+			buildPhases = (
+				C455E75220594BB100A3211D /* Sources */,
+				C455E75320594BB100A3211D /* Frameworks */,
+				C455E75420594BB100A3211D /* Resources */,
+				C455E77D20594BF800A3211D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C455E77720594BF800A3211D /* PBXTargetDependency */,
+			);
+			name = PopInterrupterDemo;
+			productName = PopInterrupterDemo;
+			productReference = C455E75620594BB100A3211D /* PopInterrupterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C455E77020594BF800A3211D /* PopInterrupter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C455E77A20594BF800A3211D /* Build configuration list for PBXNativeTarget "PopInterrupter" */;
+			buildPhases = (
+				C455E76C20594BF800A3211D /* Sources */,
+				C455E76D20594BF800A3211D /* Frameworks */,
+				C455E76E20594BF800A3211D /* Headers */,
+				C455E76F20594BF800A3211D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopInterrupter;
+			productName = PopInterrupter;
+			productReference = C455E77120594BF800A3211D /* PopInterrupter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C455E74E20594BB100A3211D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = com.jerry;
+				TargetAttributes = {
+					C455E75520594BB100A3211D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C455E77020594BF800A3211D = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C455E75120594BB100A3211D /* Build configuration list for PBXProject "PopInterrupterDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C455E74D20594BB100A3211D;
+			productRefGroup = C455E75720594BB100A3211D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C455E75520594BB100A3211D /* PopInterrupterDemo */,
+				C455E77020594BF800A3211D /* PopInterrupter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C455E75420594BB100A3211D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C455E76420594BB100A3211D /* LaunchScreen.storyboard in Resources */,
+				C455E76120594BB100A3211D /* Assets.xcassets in Resources */,
+				C423418B20595A3E0019C7AB /* README.md in Resources */,
+				C423418A20595A3E0019C7AB /* LICENSE in Resources */,
+				C455E75F20594BB100A3211D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C455E76F20594BF800A3211D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C455E75220594BB100A3211D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C455E75C20594BB100A3211D /* ViewController.swift in Sources */,
+				C455E75A20594BB100A3211D /* AppDelegate.swift in Sources */,
+				C455E783205954D500A3211D /* ScrollController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C455E76C20594BF800A3211D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C455E78020594C2D00A3211D /* UINavigationController+Swizzle.swift in Sources */,
+				C455E78120594C2D00A3211D /* UIViewController+PopInterrupter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C455E77720594BF800A3211D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C455E77020594BF800A3211D /* PopInterrupter */;
+			targetProxy = C455E77620594BF800A3211D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C455E75D20594BB100A3211D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C455E75E20594BB100A3211D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C455E76220594BB100A3211D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C455E76320594BB100A3211D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C455E76620594BB100A3211D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C455E76720594BB100A3211D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C455E76920594BB100A3211D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PopInterrupterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerry.PopInterrupterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C455E76A20594BB100A3211D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PopInterrupterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerry.PopInterrupterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C455E77B20594BF800A3211D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PopInterrupter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerry.PopInterrupter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C455E77C20594BF800A3211D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PopInterrupter/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerry.PopInterrupter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C455E75120594BB100A3211D /* Build configuration list for PBXProject "PopInterrupterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C455E76620594BB100A3211D /* Debug */,
+				C455E76720594BB100A3211D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C455E76820594BB100A3211D /* Build configuration list for PBXNativeTarget "PopInterrupterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C455E76920594BB100A3211D /* Debug */,
+				C455E76A20594BB100A3211D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C455E77A20594BF800A3211D /* Build configuration list for PBXNativeTarget "PopInterrupter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C455E77B20594BF800A3211D /* Debug */,
+				C455E77C20594BF800A3211D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C455E74E20594BB100A3211D /* Project object */;
+}
