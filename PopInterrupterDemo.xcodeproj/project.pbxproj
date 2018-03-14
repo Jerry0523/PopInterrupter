@@ -19,7 +19,6 @@
 		C455E77920594BF800A3211D /* PopInterrupter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C455E77120594BF800A3211D /* PopInterrupter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C455E78020594C2D00A3211D /* UINavigationController+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455E77E20594C2D00A3211D /* UINavigationController+Swizzle.swift */; };
 		C455E78120594C2D00A3211D /* UIViewController+PopInterrupter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455E77F20594C2D00A3211D /* UIViewController+PopInterrupter.swift */; };
-		C455E783205954D500A3211D /* ScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455E782205954D500A3211D /* ScrollController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +60,6 @@
 		C455E77420594BF800A3211D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C455E77E20594C2D00A3211D /* UINavigationController+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Swizzle.swift"; sourceTree = "<group>"; };
 		C455E77F20594C2D00A3211D /* UIViewController+PopInterrupter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PopInterrupter.swift"; sourceTree = "<group>"; };
-		C455E782205954D500A3211D /* ScrollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 			children = (
 				C455E75920594BB100A3211D /* AppDelegate.swift */,
 				C455E75B20594BB100A3211D /* ViewController.swift */,
-				C455E782205954D500A3211D /* ScrollController.swift */,
 				C455E75D20594BB100A3211D /* Main.storyboard */,
 				C455E76020594BB100A3211D /* Assets.xcassets */,
 				C455E76220594BB100A3211D /* LaunchScreen.storyboard */,
@@ -248,7 +245,6 @@
 			files = (
 				C455E75C20594BB100A3211D /* ViewController.swift in Sources */,
 				C455E75A20594BB100A3211D /* AppDelegate.swift in Sources */,
-				C455E783205954D500A3211D /* ScrollController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
