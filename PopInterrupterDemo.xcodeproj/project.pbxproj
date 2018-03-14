@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C423418A20595A3E0019C7AB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C423418820595A3E0019C7AB /* LICENSE */; };
-		C423418B20595A3E0019C7AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C423418920595A3E0019C7AB /* README.md */; };
+		C423418E20595C9B0019C7AB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C423418C20595C9B0019C7AB /* LICENSE */; };
+		C423418F20595C9B0019C7AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C423418D20595C9B0019C7AB /* README.md */; };
 		C455E75A20594BB100A3211D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455E75920594BB100A3211D /* AppDelegate.swift */; };
 		C455E75C20594BB100A3211D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C455E75B20594BB100A3211D /* ViewController.swift */; };
 		C455E75F20594BB100A3211D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C455E75D20594BB100A3211D /* Main.storyboard */; };
@@ -47,8 +47,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C423418820595A3E0019C7AB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		C423418920595A3E0019C7AB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C423418C20595C9B0019C7AB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		C423418D20595C9B0019C7AB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C455E75620594BB100A3211D /* PopInterrupterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopInterrupterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C455E75920594BB100A3211D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C455E75B20594BB100A3211D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +86,8 @@
 		C455E74D20594BB100A3211D = {
 			isa = PBXGroup;
 			children = (
+				C423418C20595C9B0019C7AB /* LICENSE */,
+				C423418D20595C9B0019C7AB /* README.md */,
 				C455E77220594BF800A3211D /* PopInterrupter */,
 				C455E75820594BB100A3211D /* PopInterrupterDemo */,
 				C455E75720594BB100A3211D /* Products */,
@@ -104,8 +106,6 @@
 		C455E75820594BB100A3211D /* PopInterrupterDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C423418920595A3E0019C7AB /* README.md */,
-				C423418820595A3E0019C7AB /* LICENSE */,
 				C455E75920594BB100A3211D /* AppDelegate.swift */,
 				C455E75B20594BB100A3211D /* ViewController.swift */,
 				C455E782205954D500A3211D /* ScrollController.swift */,
@@ -226,8 +226,8 @@
 			files = (
 				C455E76420594BB100A3211D /* LaunchScreen.storyboard in Resources */,
 				C455E76120594BB100A3211D /* Assets.xcassets in Resources */,
-				C423418B20595A3E0019C7AB /* README.md in Resources */,
-				C423418A20595A3E0019C7AB /* LICENSE in Resources */,
+				C423418F20595C9B0019C7AB /* README.md in Resources */,
+				C423418E20595C9B0019C7AB /* LICENSE in Resources */,
 				C455E75F20594BB100A3211D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
